@@ -1,6 +1,31 @@
-# Rulers Template — 通用 AI 开发规范模板
+<div align="center">
 
-将本模板放入任意项目后，即可为 AI 编码助手（Claude Code、Cursor、Copilot 等）提供渐进加载的规范约束、激活门禁和领域路由，覆盖从项目发现到生产发布的全生命周期。
+<img src="logo.png" alt="Rulers Template" width="120">
+
+# 📏 Rulers Template
+
+**通用 AI 开发规范模板 — Progressive AI Coding Standards for AI-Powered Development**
+
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](https://github.com/AndersJet/ai-rulers-template/releases)
+[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](https://github.com/AndersJet/ai-rulers-template/pulls)
+
+[![Claude Code](https://img.shields.io/badge/AI-Claude%20Code-d97757)](https://claude.ai)
+[![Cursor](https://img.shields.io/badge/AI-Cursor-6c4df5)](https://cursor.sh)
+[![GitHub Copilot](https://img.shields.io/badge/AI-GitHub%20Copilot-0288d1)](https://github.com/features/copilot)
+
+[快速开始](#1-快速开始) •
+[激活等级](#2-激活等级) •
+[初始化流程](#3-初始化详细流程) •
+[日常使用](#4-日常使用) •
+[目录说明](#6-目录与文件说明)
+
+</div>
+
+---
+
+> [!IMPORTANT]
+> 将本模板放入任意项目后，即可为 AI 编码助手（Claude Code、Cursor、Copilot 等）提供渐进加载的规范约束、激活门禁和领域路由，覆盖从项目发现到生产发布的全生命周期。
 
 ---
 
@@ -296,3 +321,21 @@ core 全局硬约束 > 安全规则 > 激活门禁 > 领域规则 > 专题规则
 ### Q: 如何更新已激活的规则？
 
 修改规则前执行 ruler impact assessment（见 `core/RULER_MAINTENANCE.md`）：判断是否需要更新、确定变更层级、选择目标文件、修改后运行校验。
+
+---
+
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=AndersJet/ai-rulers-template&type=Date)](https://star-history.com/#AndersJet/ai-rulers-template&Date)
+
+---
+
+<div align="center">
+
+### 💖 如果这个项目对你有帮助，欢迎给我们一个 ⭐️ Star！
+
+**[快速开始](#1-快速开始)** • **[初始化流程](#3-初始化详细流程)** • **[提交 Issue](https://github.com/AndersJet/ai-rulers-template/issues)**
+
+Made with ❤️ by [AndersJet](https://github.com/AndersJet)
+
+</div>
