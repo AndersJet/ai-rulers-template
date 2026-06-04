@@ -9,6 +9,7 @@
 
 - 模板入口与激活门禁：[AGENTS.md](AGENTS.md)
 - 项目事实 schema：[PROJECT_PROFILE.template.md](PROJECT_PROFILE.template.md)
+- 变更记录模板：[CHANGELOG.template.md](CHANGELOG.template.md)
 - 棕地 discovery 指南：[bootstrap/PROJECT_DISCOVERY.md](bootstrap/PROJECT_DISCOVERY.md)
 
 ---
@@ -46,6 +47,7 @@ ai-rulers-template/
 | 入口 | 用途 |
 | --- | --- |
 | [AGENTS.md](AGENTS.md) | 渐进加载入口、激活门禁与任务路由。 |
+| [CHANGELOG.template.md](CHANGELOG.template.md) | 变更记录模板，初始化时生成到项目根目录。 |
 | [core/HARD_CONSTRAINTS.md](core/HARD_CONSTRAINTS.md) | 全局安全、测试、禁令与完成约束。 |
 | [core/WORKFLOW.md](core/WORKFLOW.md) | 标准实施工作流与推理顺序。 |
 | [core/DOC_GOVERNANCE.md](core/DOC_GOVERNANCE.md) | 维护 ruler 文档的治理规则。 |
