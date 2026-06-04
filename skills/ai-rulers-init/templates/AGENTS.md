@@ -9,6 +9,7 @@ load_order:
   - documents/rulers/core/DOC_GOVERNANCE.md
   - documents/rulers/core/RULER_MAINTENANCE.md
   - documents/rulers/core/GIT_COMMIT_CONVENTION.md
+  - documents/rulers/core/CHANGELOG_MAINTENANCE.md
 ---
 
 # AI 协作协议模板
@@ -49,6 +50,7 @@ load_order:
 - 规则文档治理：[core/DOC_GOVERNANCE.md]({{RULERS_DIR}}/core/DOC_GOVERNANCE.md)
 - Ruler 维护决策树：[core/RULER_MAINTENANCE.md]({{RULERS_DIR}}/core/RULER_MAINTENANCE.md)
 - Git 提交规范：[core/GIT_COMMIT_CONVENTION.md]({{RULERS_DIR}}/core/GIT_COMMIT_CONVENTION.md)
+- CHANGELOG 维护规范与提交前更新门禁：[core/CHANGELOG_MAINTENANCE.md]({{RULERS_DIR}}/core/CHANGELOG_MAINTENANCE.md)
 
 最短推理顺序：
 
