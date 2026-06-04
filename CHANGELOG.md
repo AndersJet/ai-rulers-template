@@ -5,6 +5,8 @@
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-06-04
+
 ### Added
 
 - 新增 CHANGELOG 模板与维护规范
