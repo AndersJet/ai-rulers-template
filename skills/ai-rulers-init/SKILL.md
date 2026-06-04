@@ -162,6 +162,19 @@ grep -rn "目标项目" documents/<RULERS_DIR_NAME>/ --include="*.md" \
 
 无论复制/合并/跳过，如果根目录 AGENTS.md 中包含 `{{RULERS_DIR}}`，同样替换为 `documents/<RULERS_DIR_NAME>`。
 
+### 0.6 生成 CHANGELOG.md
+
+检查项目根目录是否已存在 `CHANGELOG.md`：
+
+**不存在** → 将 `documents/<RULERS_DIR_NAME>/CHANGELOG.template.md` **复制**到项目根目录，重命名为 `CHANGELOG.md`（保留模板内副本供校验使用）。
+
+**已存在** → 跳过，保留现有 CHANGELOG（避免覆盖项目已有的变更历史）。
+
+验证：
+```bash
+ls -la CHANGELOG.md && echo "OK: CHANGELOG.md exists" || echo "MISSING"
+```
+
 ### Step 0 完成确认
 
 ```
@@ -169,6 +182,7 @@ grep -rn "目标项目" documents/<RULERS_DIR_NAME>/ --include="*.md" \
    - 模板目录：documents/<RULERS_DIR_NAME>/
    - 占位符已全部替换
    - AGENTS.md：<已迁移到根目录 / 已合并 / 已跳过>
+   - CHANGELOG.md：<已生成 / 已跳过>
 ```
 
 ---
