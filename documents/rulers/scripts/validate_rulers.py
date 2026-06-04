@@ -18,6 +18,7 @@ ROOT_DOCS_WITHOUT_METADATA = {
     Path("AGENTS.md"),
     Path("INDEX.md"),
     Path("PROJECT_PROFILE.template.md"),
+    Path("CHANGELOG.template.md"),
     Path("README.md"),
 }
 
@@ -27,6 +28,7 @@ CORE_EXPECTED_REFERENCES = (
     "core/DOC_GOVERNANCE.md",
     "core/RULER_MAINTENANCE.md",
     "core/GIT_COMMIT_CONVENTION.md",
+    "core/CHANGELOG_MAINTENANCE.md",
 )
 
 HIGH_RISK_DOCUMENTS = (
