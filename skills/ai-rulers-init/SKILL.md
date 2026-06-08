@@ -438,7 +438,8 @@ ls -la CHANGELOG.md && echo "OK: CHANGELOG.md exists" || echo "MISSING"
 2. 基于 PROJECT_PROFILE.md 事实重写：适用范围对齐、验证命令替换为实际命令、移除不匹配示例
 3. 生成叶子规则：保留通用约束、删除不匹配示例、替换模板占位符
 4. 更新 `RULES_COMPLETENESS_CHECKLIST.md`
-5. 请求人工审阅：
+5. **更新领域 `INDEX.md` 中的激活等级描述**：将模板中的初始等级（如"Level 0"）更新为审阅后的实际等级（如"Level 2（已审阅）"），确保各领域入口文件的状态与 PROJECT_PROFILE.md 一致
+6. 请求人工审阅：
 
 > `<领域> 领域规则已生成。请审阅：
 > - INDEX.md 路由是否正确
@@ -499,9 +500,10 @@ python3 documents/<RULERS_DIR_NAME>/scripts/validate_rulers.py
 
 ## Step 5: 激活
 
-### 5.1 更新完整性检查清单
+### 5.1 更新完整性检查清单与领域状态
 
-更新 `documents/<RULERS_DIR_NAME>/bootstrap/RULES_COMPLETENESS_CHECKLIST.md`。
+1. 更新 `documents/<RULERS_DIR_NAME>/bootstrap/RULES_COMPLETENESS_CHECKLIST.md`，记录各领域的审阅状态和激活等级。
+2. **同步更新各已激活领域的 `INDEX.md`**：将领域入口文件中的"当前等级"描述更新为审阅后的实际等级（如从"Level 0（待审阅）"更新为"Level 2（已审阅）"），确保所有入口文件的状态与 PROJECT_PROFILE.md 和 RULES_COMPLETENESS_CHECKLIST.md 保持一致。
 
 ### 5.2 输出激活状态摘要
 
