@@ -17,9 +17,9 @@ metadata:
     - 版本记录
     - unreleased
   must_load_with:
-    - ../AGENTS.md
-    - HARD_CONSTRAINTS.md
-    - GIT_COMMIT_CONVENTION.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/core/GIT_COMMIT_CONVENTION.md
 ```
 
 ---

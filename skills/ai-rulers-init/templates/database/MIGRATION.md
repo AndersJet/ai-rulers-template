@@ -19,9 +19,9 @@ metadata:
     - 破坏性变更
     - 数据库
   must_load_with:
-    - ../AGENTS.md
-    - ../core/HARD_CONSTRAINTS.md
-    - INDEX.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/database/INDEX.md
 ```
 
 ---

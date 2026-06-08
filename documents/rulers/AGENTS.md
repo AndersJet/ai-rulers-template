@@ -4,12 +4,12 @@ layer: entry
 applies_to:
   - all
 load_order:
-  - documents/rulers/core/HARD_CONSTRAINTS.md
-  - documents/rulers/core/WORKFLOW.md
-  - documents/rulers/core/DOC_GOVERNANCE.md
-  - documents/rulers/core/RULER_MAINTENANCE.md
-  - documents/rulers/core/GIT_COMMIT_CONVENTION.md
-  - documents/rulers/core/CHANGELOG_MAINTENANCE.md
+  - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+  - {{RULERS_DIR}}/core/WORKFLOW.md
+  - {{RULERS_DIR}}/core/DOC_GOVERNANCE.md
+  - {{RULERS_DIR}}/core/RULER_MAINTENANCE.md
+  - {{RULERS_DIR}}/core/GIT_COMMIT_CONVENTION.md
+  - {{RULERS_DIR}}/core/CHANGELOG_MAINTENANCE.md
 ---
 
 # AI 协作协议模板
@@ -45,12 +45,12 @@ load_order:
 
 加载本入口后，以下 core 规则始终必须加载：
 
-- 安全、测试、禁令与完成门禁：[core/HARD_CONSTRAINTS.md]({{RULERS_DIR}}/core/HARD_CONSTRAINTS.md)
-- 实施工作流与推理顺序：[core/WORKFLOW.md]({{RULERS_DIR}}/core/WORKFLOW.md)
-- 规则文档治理：[core/DOC_GOVERNANCE.md]({{RULERS_DIR}}/core/DOC_GOVERNANCE.md)
-- Ruler 维护决策树：[core/RULER_MAINTENANCE.md]({{RULERS_DIR}}/core/RULER_MAINTENANCE.md)
-- Git 提交规范：[core/GIT_COMMIT_CONVENTION.md]({{RULERS_DIR}}/core/GIT_COMMIT_CONVENTION.md)
-- CHANGELOG 维护规范与提交前更新门禁：[core/CHANGELOG_MAINTENANCE.md]({{RULERS_DIR}}/core/CHANGELOG_MAINTENANCE.md)
+- 安全、测试、禁令与完成门禁：[{{RULERS_DIR}}/core/HARD_CONSTRAINTS.md]({{RULERS_DIR}}/core/HARD_CONSTRAINTS.md)
+- 实施工作流与推理顺序：[{{RULERS_DIR}}/core/WORKFLOW.md]({{RULERS_DIR}}/core/WORKFLOW.md)
+- 规则文档治理：[{{RULERS_DIR}}/core/DOC_GOVERNANCE.md]({{RULERS_DIR}}/core/DOC_GOVERNANCE.md)
+- Ruler 维护决策树：[{{RULERS_DIR}}/core/RULER_MAINTENANCE.md]({{RULERS_DIR}}/core/RULER_MAINTENANCE.md)
+- Git 提交规范：[{{RULERS_DIR}}/core/GIT_COMMIT_CONVENTION.md]({{RULERS_DIR}}/core/GIT_COMMIT_CONVENTION.md)
+- CHANGELOG 维护规范与提交前更新门禁：[{{RULERS_DIR}}/core/CHANGELOG_MAINTENANCE.md]({{RULERS_DIR}}/core/CHANGELOG_MAINTENANCE.md)
 
 最短推理顺序：
 
@@ -82,14 +82,14 @@ Analyze dependencies -> Check constraints -> Verify patterns -> Write code
 
 | 任务类型 | 必需入口 | 追加路由说明 |
 | --- | --- | --- |
-| 后端服务、API、服务端校验、授权、事务 | [backend/INDEX.md]({{RULERS_DIR}}/backend/INDEX.md) | 涉及持久化、schema、migrations 或 SQL 时，追加数据库路由。 |
-| 数据库 schema、migrations、索引、约束、seeds、backfills | [database/INDEX.md]({{RULERS_DIR}}/database/INDEX.md) | 实体、仓储、事务、API 或服务行为变化时，追加后端路由。 |
-| 前端共享架构、状态、构建、包管理、跨平台 UI | [frontend/INDEX.md]({{RULERS_DIR}}/frontend/INDEX.md) | 根据平台继续路由到 common、web 或 app 入口。 |
-| 设计 token、共享样式、品牌、无障碍基线 | [frontend/common/INDEX.md]({{RULERS_DIR}}/frontend/common/INDEX.md) | 视觉实现变化时，追加平台专属设计规则。 |
-| Web 或管理端前端页面、路由、组件、守卫、API 集成 | [frontend/web/INDEX.md]({{RULERS_DIR}}/frontend/web/INDEX.md) | 仅在任务命中时加载 web develop 与 design 叶子规则。 |
-| 移动 app、H5、类原生流程、移动 UI 组件、移动路由 | [frontend/app/INDEX.md]({{RULERS_DIR}}/frontend/app/INDEX.md) | 仅在任务命中时加载 app develop 与 design 叶子规则。 |
-| 规则维护、治理、索引更新、校验脚本 | [core/DOC_GOVERNANCE.md]({{RULERS_DIR}}/core/DOC_GOVERNANCE.md), [core/RULER_MAINTENANCE.md]({{RULERS_DIR}}/core/RULER_MAINTENANCE.md) | 修改规则前执行 ruler impact assessment。 |
-| 棕地 discovery、画像创建、规则生成准备 | [bootstrap/PROJECT_DISCOVERY.md]({{RULERS_DIR}}/bootstrap/PROJECT_DISCOVERY.md) | 在 `PROJECT_PROFILE.md` 与领域规则经过审阅前，使用 bootstrap 规则。 |
+| 后端服务、API、服务端校验、授权、事务 | [{{RULERS_DIR}}/backend/INDEX.md]({{RULERS_DIR}}/backend/INDEX.md) | 涉及持久化、schema、migrations 或 SQL 时，追加数据库路由。 |
+| 数据库 schema、migrations、索引、约束、seeds、backfills | [{{RULERS_DIR}}/database/INDEX.md]({{RULERS_DIR}}/database/INDEX.md) | 实体、仓储、事务、API 或服务行为变化时，追加后端路由。 |
+| 前端共享架构、状态、构建、包管理、跨平台 UI | [{{RULERS_DIR}}/frontend/INDEX.md]({{RULERS_DIR}}/frontend/INDEX.md) | 根据平台继续路由到 common、web 或 app 入口。 |
+| 设计 token、共享样式、品牌、无障碍基线 | [{{RULERS_DIR}}/frontend/common/INDEX.md]({{RULERS_DIR}}/frontend/common/INDEX.md) | 视觉实现变化时，追加平台专属设计规则。 |
+| Web 或管理端前端页面、路由、组件、守卫、API 集成 | [{{RULERS_DIR}}/frontend/web/INDEX.md]({{RULERS_DIR}}/frontend/web/INDEX.md) | 仅在任务命中时加载 web develop 与 design 叶子规则。 |
+| 移动 app、H5、类原生流程、移动 UI 组件、移动路由 | [{{RULERS_DIR}}/frontend/app/INDEX.md]({{RULERS_DIR}}/frontend/app/INDEX.md) | 仅在任务命中时加载 app develop 与 design 叶子规则。 |
+| 规则维护、治理、索引更新、校验脚本 | [{{RULERS_DIR}}/core/DOC_GOVERNANCE.md]({{RULERS_DIR}}/core/DOC_GOVERNANCE.md), [{{RULERS_DIR}}/core/RULER_MAINTENANCE.md]({{RULERS_DIR}}/core/RULER_MAINTENANCE.md) | 修改规则前执行 ruler impact assessment。 |
+| 棕地 discovery、画像创建、规则生成准备 | [{{RULERS_DIR}}/bootstrap/PROJECT_DISCOVERY.md]({{RULERS_DIR}}/bootstrap/PROJECT_DISCOVERY.md) | 在 `PROJECT_PROFILE.md` 与领域规则经过审阅前，使用 bootstrap 规则。 |
 
 冲突裁决顺序：
 

@@ -27,9 +27,9 @@ metadata:
     - 校验脚本
     - 规范维护
   must_load_with:
-    - ../AGENTS.md
-    - HARD_CONSTRAINTS.md
-    - DOC_GOVERNANCE.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/core/DOC_GOVERNANCE.md
 ```
 
 ---

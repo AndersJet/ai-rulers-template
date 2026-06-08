@@ -23,8 +23,8 @@ metadata:
     - 索引
     - 约束
   must_load_with:
-    - ../AGENTS.md
-    - ../core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
 ```
 
 ---
@@ -33,9 +33,9 @@ metadata:
 
 处理 schema、migration、索引、约束、seed 和 backfill 任务时，加载以下数据库规范：
 
-- [SCHEMA_DESIGN.md](SCHEMA_DESIGN.md)
-- [MIGRATION.md](MIGRATION.md)
-- [REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md)
+- [{{RULERS_DIR}}/database/SCHEMA_DESIGN.md]({{RULERS_DIR}}/database/SCHEMA_DESIGN.md)
+- [{{RULERS_DIR}}/database/MIGRATION.md]({{RULERS_DIR}}/database/MIGRATION.md)
+- [{{RULERS_DIR}}/database/REVIEW_CHECKLIST.md]({{RULERS_DIR}}/database/REVIEW_CHECKLIST.md)
 
 ---
 
@@ -43,8 +43,8 @@ metadata:
 
 | 任务条件 | 还需加载 |
 | --- | --- |
-| 种子数据、引用数据、角色或权限绑定、backfill | [DATA_SEED.md](DATA_SEED.md) |
-| 应用行为或持久化模型变更 | [../backend/INDEX.md](../backend/INDEX.md) |
+| 种子数据、引用数据、角色或权限绑定、backfill | [{{RULERS_DIR}}/database/DATA_SEED.md]({{RULERS_DIR}}/database/DATA_SEED.md) |
+| 应用行为或持久化模型变更 | [{{RULERS_DIR}}/backend/INDEX.md]({{RULERS_DIR}}/backend/INDEX.md) |
 
 ---
 

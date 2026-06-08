@@ -21,10 +21,10 @@ metadata:
     - 主题
     - 布局
   must_load_with:
-    - ../../../AGENTS.md
-    - ../../../core/HARD_CONSTRAINTS.md
-    - INDEX.md
-    - ../../common/DESIGN_TOKENS.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/frontend/web/design/INDEX.md
+    - {{RULERS_DIR}}/frontend/common/DESIGN_TOKENS.md
 ```
 
 ---
@@ -47,7 +47,7 @@ metadata:
 
 ## 3. Token 权威来源
 
-- Token 使用必须遵循 [../../common/DESIGN_TOKENS.md](../../common/DESIGN_TOKENS.md)。
+- Token 使用必须遵循 [{{RULERS_DIR}}/frontend/common/DESIGN_TOKENS.md]({{RULERS_DIR}}/frontend/common/DESIGN_TOKENS.md)。
 - 不得在此通用模板中定义具体颜色。
 - 生成的项目规则只能根据目标项目的权威设计来源定义具体值。
 

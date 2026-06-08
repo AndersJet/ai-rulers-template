@@ -23,7 +23,7 @@ metadata:
     - 硬约束
     - 质量门禁
   must_load_with:
-    - ../AGENTS.md
+    - {{RULERS_DIR}}/AGENTS.md
 ```
 
 ---

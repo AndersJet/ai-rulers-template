@@ -17,7 +17,7 @@ metadata:
     - CI/CD
   must_load_with:
     - "{{RULERS_DIR}}/core/HARD_CONSTRAINTS.md"
-    - AGENTS.md
+    - {{RULERS_DIR}}/AGENTS.md
 ```
 
 ## 1. Rulers 模板信息

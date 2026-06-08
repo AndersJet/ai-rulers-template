@@ -20,9 +20,9 @@ metadata:
     - 授权
     - 测试
   must_load_with:
-    - ../../../AGENTS.md
-    - ../../../core/HARD_CONSTRAINTS.md
-    - ../INDEX.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/frontend/web/INDEX.md
 ```
 
 ---
@@ -31,17 +31,17 @@ metadata:
 
 Web 前端实施任务需加载这些规则：
 
-- [ARCHITECTURE.md](ARCHITECTURE.md)
-- [API_INTEGRATION.md](API_INTEGRATION.md)
-- [AUTHORIZATION.md](AUTHORIZATION.md)
-- [STATE_MANAGEMENT.md](STATE_MANAGEMENT.md)
-- [TESTING.md](TESTING.md)
+- [{{RULERS_DIR}}/frontend/web/develop/ARCHITECTURE.md]({{RULERS_DIR}}/frontend/web/develop/ARCHITECTURE.md)
+- [{{RULERS_DIR}}/frontend/web/develop/API_INTEGRATION.md]({{RULERS_DIR}}/frontend/web/develop/API_INTEGRATION.md)
+- [{{RULERS_DIR}}/frontend/web/develop/AUTHORIZATION.md]({{RULERS_DIR}}/frontend/web/develop/AUTHORIZATION.md)
+- [{{RULERS_DIR}}/frontend/web/develop/STATE_MANAGEMENT.md]({{RULERS_DIR}}/frontend/web/develop/STATE_MANAGEMENT.md)
+- [{{RULERS_DIR}}/frontend/web/develop/TESTING.md]({{RULERS_DIR}}/frontend/web/develop/TESTING.md)
 
 ---
 
 ## 2. 范围
 
-这些规则覆盖面向浏览器的前端平台的实施结构、客户端契约、授权用户体验、状态所有权和验证。视觉系统规则通过 [../design/INDEX.md](../design/INDEX.md) 路由。
+这些规则覆盖面向浏览器的前端平台的实施结构、客户端契约、授权用户体验、状态所有权和验证。视觉系统规则通过 [{{RULERS_DIR}}/frontend/web/design/INDEX.md]({{RULERS_DIR}}/frontend/web/design/INDEX.md) 路由。
 
 ---
 

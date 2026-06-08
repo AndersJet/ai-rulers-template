@@ -19,10 +19,10 @@ metadata:
     - 复用
     - 设计系统
   must_load_with:
-    - ../../../AGENTS.md
-    - ../../../core/HARD_CONSTRAINTS.md
-    - INDEX.md
-    - ../../common/DESIGN_TOKENS.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/frontend/web/design/INDEX.md
+    - {{RULERS_DIR}}/frontend/common/DESIGN_TOKENS.md
 ```
 
 ---

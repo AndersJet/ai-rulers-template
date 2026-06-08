@@ -21,10 +21,10 @@ metadata:
     - 导航流程
     - 交互
   must_load_with:
-    - ../../../AGENTS.md
-    - ../../../core/HARD_CONSTRAINTS.md
-    - INDEX.md
-    - ACCESSIBILITY.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/frontend/app/design/INDEX.md
+    - {{RULERS_DIR}}/frontend/app/design/ACCESSIBILITY.md
 ```
 
 ---

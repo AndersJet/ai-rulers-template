@@ -25,9 +25,9 @@ metadata:
     - 单一事实来源
     - 项目事实
   must_load_with:
-    - ../AGENTS.md
-    - HARD_CONSTRAINTS.md
-    - RULER_MAINTENANCE.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/core/RULER_MAINTENANCE.md
 ```
 
 ---

@@ -21,9 +21,9 @@ metadata:
     - 事务
     - 数据访问
   must_load_with:
-    - ../AGENTS.md
-    - ../core/HARD_CONSTRAINTS.md
-    - INDEX.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/backend/INDEX.md
 ```
 
 ---
@@ -48,7 +48,7 @@ metadata:
 
 - 未记录访问模式时，不得新增索引、约束或反规范化字段。
 - 持久化模型变更必须与数据库规范协同。
-- 处理 schema、migration、seed、backfill、索引或约束工作时，加载 [../database/INDEX.md](../database/INDEX.md)。
+- 处理 schema、migration、seed、backfill、索引或约束工作时，加载 [{{RULERS_DIR}}/database/INDEX.md]({{RULERS_DIR}}/database/INDEX.md)。
 
 ---
 

@@ -20,9 +20,9 @@ metadata:
     - 响应式
     - 前端
   must_load_with:
-    - ../../AGENTS.md
-    - ../../core/HARD_CONSTRAINTS.md
-    - ../INDEX.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/frontend/INDEX.md
 ```
 
 ---
@@ -31,8 +31,8 @@ metadata:
 
 | 任务条件 | 还需加载 |
 | --- | --- |
-| Web 代码、路由、状态、API、授权、测试 | [develop/INDEX.md](develop/INDEX.md) |
-| 页面、组件、布局、响应式行为、主题、无障碍 | [design/INDEX.md](design/INDEX.md) |
+| Web 代码、路由、状态、API、授权、测试 | [{{RULERS_DIR}}/frontend/web/develop/INDEX.md]({{RULERS_DIR}}/frontend/web/develop/INDEX.md) |
+| 页面、组件、布局、响应式行为、主题、无障碍 | [{{RULERS_DIR}}/frontend/web/design/INDEX.md]({{RULERS_DIR}}/frontend/web/design/INDEX.md) |
 
 ---
 

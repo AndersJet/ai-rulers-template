@@ -21,10 +21,10 @@ metadata:
     - 启动引导
     - 激活等级
   must_load_with:
-    - ../AGENTS.md
-    - PROJECT_DISCOVERY.md
-    - ACTIVATION_LEVELS.md
-    - RULES_COMPLETENESS_CHECKLIST.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/bootstrap/PROJECT_DISCOVERY.md
+    - {{RULERS_DIR}}/bootstrap/ACTIVATION_LEVELS.md
+    - {{RULERS_DIR}}/bootstrap/RULES_COMPLETENESS_CHECKLIST.md
 ```
 
 ---

@@ -20,8 +20,8 @@ metadata:
     - 组件
     - 设计
   must_load_with:
-    - ../AGENTS.md
-    - ../core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
 ```
 
 ---
@@ -32,9 +32,9 @@ metadata:
 
 | 任务条件 | 还需加载 |
 | --- | --- |
-| 共享视觉基础、设计 token、跨平台 UI 一致性 | [common/INDEX.md](common/INDEX.md) |
-| 面向浏览器或桌面端的前端平台工作 | [web/INDEX.md](web/INDEX.md) |
-| 移动端或触控优先的前端平台工作 | [app/INDEX.md](app/INDEX.md) |
+| 共享视觉基础、设计 token、跨平台 UI 一致性 | [{{RULERS_DIR}}/frontend/common/INDEX.md]({{RULERS_DIR}}/frontend/common/INDEX.md) |
+| 面向浏览器或桌面端的前端平台工作 | [{{RULERS_DIR}}/frontend/web/INDEX.md]({{RULERS_DIR}}/frontend/web/INDEX.md) |
+| 移动端或触控优先的前端平台工作 | [{{RULERS_DIR}}/frontend/app/INDEX.md]({{RULERS_DIR}}/frontend/app/INDEX.md) |
 
 ---
 

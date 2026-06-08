@@ -20,10 +20,10 @@ metadata:
     - 启动引导
     - 审阅门禁
   must_load_with:
-    - ../AGENTS.md
-    - PROJECT_DISCOVERY.md
-    - BROWNFIELD_RULE_GENERATION.md
-    - RULES_COMPLETENESS_CHECKLIST.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/bootstrap/PROJECT_DISCOVERY.md
+    - {{RULERS_DIR}}/bootstrap/BROWNFIELD_RULE_GENERATION.md
+    - {{RULERS_DIR}}/bootstrap/RULES_COMPLETENESS_CHECKLIST.md
 ```
 
 ---

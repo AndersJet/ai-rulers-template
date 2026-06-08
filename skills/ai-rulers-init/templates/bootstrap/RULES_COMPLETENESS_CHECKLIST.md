@@ -21,10 +21,10 @@ metadata:
     - 启动引导
     - 审阅协议
   must_load_with:
-    - ../AGENTS.md
-    - PROJECT_DISCOVERY.md
-    - BROWNFIELD_RULE_GENERATION.md
-    - ACTIVATION_LEVELS.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/bootstrap/PROJECT_DISCOVERY.md
+    - {{RULERS_DIR}}/bootstrap/BROWNFIELD_RULE_GENERATION.md
+    - {{RULERS_DIR}}/bootstrap/ACTIVATION_LEVELS.md
 ```
 
 ---

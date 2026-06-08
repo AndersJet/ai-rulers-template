@@ -19,9 +19,9 @@ metadata:
     - 非权威
     - 设计示例
   must_load_with:
-    - ../../../AGENTS.md
-    - ../../../core/HARD_CONSTRAINTS.md
-    - INDEX.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/frontend/app/design/INDEX.md
 ```
 
 ---

@@ -22,10 +22,10 @@ metadata:
     - 无障碍
     - 示例
   must_load_with:
-    - ../../../AGENTS.md
-    - ../../../core/HARD_CONSTRAINTS.md
-    - ../INDEX.md
-    - ../../common/DESIGN_TOKENS.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/frontend/app/INDEX.md
+    - {{RULERS_DIR}}/frontend/common/DESIGN_TOKENS.md
 ```
 
 ---
@@ -34,18 +34,18 @@ metadata:
 
 移动端布局、触控交互、安全区域、主题和无障碍工作需加载这些规则：
 
-- [TOKENS.md](TOKENS.md)
-- [LAYOUT.md](LAYOUT.md)
-- [COMPONENTS.md](COMPONENTS.md)
-- [INTERACTION.md](INTERACTION.md)
-- [ACCESSIBILITY.md](ACCESSIBILITY.md)
-- [EXAMPLES.md](EXAMPLES.md)
+- [{{RULERS_DIR}}/frontend/app/design/TOKENS.md]({{RULERS_DIR}}/frontend/app/design/TOKENS.md)
+- [{{RULERS_DIR}}/frontend/app/design/LAYOUT.md]({{RULERS_DIR}}/frontend/app/design/LAYOUT.md)
+- [{{RULERS_DIR}}/frontend/app/design/COMPONENTS.md]({{RULERS_DIR}}/frontend/app/design/COMPONENTS.md)
+- [{{RULERS_DIR}}/frontend/app/design/INTERACTION.md]({{RULERS_DIR}}/frontend/app/design/INTERACTION.md)
+- [{{RULERS_DIR}}/frontend/app/design/ACCESSIBILITY.md]({{RULERS_DIR}}/frontend/app/design/ACCESSIBILITY.md)
+- [{{RULERS_DIR}}/frontend/app/design/EXAMPLES.md]({{RULERS_DIR}}/frontend/app/design/EXAMPLES.md)
 
 ---
 
 ## 2. 范围
 
-设计规则治理移动端 token 适配、布局、可复用组件、交互、无障碍和非权威示例。仅实施相关的关注点通过 [../develop/INDEX.md](../develop/INDEX.md) 路由。
+设计规则治理移动端 token 适配、布局、可复用组件、交互、无障碍和非权威示例。仅实施相关的关注点通过 [{{RULERS_DIR}}/frontend/app/develop/INDEX.md]({{RULERS_DIR}}/frontend/app/develop/INDEX.md) 路由。
 
 ---
 

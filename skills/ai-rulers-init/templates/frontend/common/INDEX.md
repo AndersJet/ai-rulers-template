@@ -19,9 +19,9 @@ metadata:
     - 共享设计
     - 视觉基础
   must_load_with:
-    - ../../AGENTS.md
-    - ../../core/HARD_CONSTRAINTS.md
-    - ../INDEX.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/frontend/INDEX.md
 ```
 
 ---
@@ -30,7 +30,7 @@ metadata:
 
 当变更影响多个平台或改变可复用视觉决策时，加载共享前端基础：
 
-- [DESIGN_TOKENS.md](DESIGN_TOKENS.md)
+- [{{RULERS_DIR}}/frontend/common/DESIGN_TOKENS.md]({{RULERS_DIR}}/frontend/common/DESIGN_TOKENS.md)
 
 ---
 

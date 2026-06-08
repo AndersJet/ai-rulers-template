@@ -21,9 +21,9 @@ metadata:
     - UI 模式
     - 测试
   must_load_with:
-    - ../../../AGENTS.md
-    - ../../../core/HARD_CONSTRAINTS.md
-    - ../INDEX.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/frontend/app/INDEX.md
 ```
 
 ---
@@ -32,15 +32,15 @@ metadata:
 
 移动端或触控优先前端实施任务需加载这些规则：
 
-- [ARCHITECTURE.md](ARCHITECTURE.md)
-- [UI_PATTERNS.md](UI_PATTERNS.md)
-- [TESTING.md](TESTING.md)
+- [{{RULERS_DIR}}/frontend/app/develop/ARCHITECTURE.md]({{RULERS_DIR}}/frontend/app/develop/ARCHITECTURE.md)
+- [{{RULERS_DIR}}/frontend/app/develop/UI_PATTERNS.md]({{RULERS_DIR}}/frontend/app/develop/UI_PATTERNS.md)
+- [{{RULERS_DIR}}/frontend/app/develop/TESTING.md]({{RULERS_DIR}}/frontend/app/develop/TESTING.md)
 
 ---
 
 ## 2. 范围
 
-这些规则覆盖导航、页面状态、平台边界、实施层 UI 模式和验证。详细移动端设计规则通过 [../design/INDEX.md](../design/INDEX.md) 路由。
+这些规则覆盖导航、页面状态、平台边界、实施层 UI 模式和验证。详细移动端设计规则通过 [{{RULERS_DIR}}/frontend/app/design/INDEX.md]({{RULERS_DIR}}/frontend/app/design/INDEX.md) 路由。
 
 ---
 

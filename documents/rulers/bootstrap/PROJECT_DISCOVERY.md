@@ -21,8 +21,8 @@ metadata:
     - 棕地项目
     - rules 生成
   must_load_with:
-    - ../AGENTS.md
-    - ../PROJECT_PROFILE.template.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/PROJECT_PROFILE.template.md
 ```
 
 ---

@@ -21,8 +21,8 @@ metadata:
     - 验证
     - 收尾
   must_load_with:
-    - ../AGENTS.md
-    - HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
 ```
 
 ---

@@ -24,10 +24,10 @@ metadata:
     - 动效
     - 触控目标
   must_load_with:
-    - ../../../AGENTS.md
-    - ../../../core/HARD_CONSTRAINTS.md
-    - INDEX.md
-    - TOKENS.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/frontend/app/design/INDEX.md
+    - {{RULERS_DIR}}/frontend/app/design/TOKENS.md
 ```
 
 ---

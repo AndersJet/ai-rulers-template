@@ -25,9 +25,9 @@ metadata:
     - 阴影
     - 主题
   must_load_with:
-    - ../../AGENTS.md
-    - ../../core/HARD_CONSTRAINTS.md
-    - INDEX.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/frontend/common/INDEX.md
 ```
 
 ---

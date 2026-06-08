@@ -25,8 +25,8 @@ metadata:
     - changelog
     - 变更记录
   must_load_with:
-    - ../AGENTS.md
-    - HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
 ```
 
 ---

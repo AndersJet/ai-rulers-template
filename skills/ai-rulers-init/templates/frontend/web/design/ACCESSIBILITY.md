@@ -22,10 +22,10 @@ metadata:
     - 对比度
     - 减少动态效果
   must_load_with:
-    - ../../../AGENTS.md
-    - ../../../core/HARD_CONSTRAINTS.md
-    - INDEX.md
-    - ../../common/DESIGN_TOKENS.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/frontend/web/design/INDEX.md
+    - {{RULERS_DIR}}/frontend/common/DESIGN_TOKENS.md
 ```
 
 ---

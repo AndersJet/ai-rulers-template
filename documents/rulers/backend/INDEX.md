@@ -20,8 +20,8 @@ metadata:
     - 配置
     - 可观测性
   must_load_with:
-    - ../AGENTS.md
-    - ../core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
 ```
 
 ---
@@ -30,9 +30,9 @@ metadata:
 
 处理后端、服务端、API 与服务行为任务时，加载以下后端规范：
 
-- [ARCHITECTURE.md](ARCHITECTURE.md)
-- [API_SECURITY.md](API_SECURITY.md)
-- [TESTING.md](TESTING.md)
+- [{{RULERS_DIR}}/backend/ARCHITECTURE.md]({{RULERS_DIR}}/backend/ARCHITECTURE.md)
+- [{{RULERS_DIR}}/backend/API_SECURITY.md]({{RULERS_DIR}}/backend/API_SECURITY.md)
+- [{{RULERS_DIR}}/backend/TESTING.md]({{RULERS_DIR}}/backend/TESTING.md)
 
 ---
 
@@ -40,16 +40,16 @@ metadata:
 
 | 任务条件 | 还需加载 |
 | --- | --- |
-| 持久化、仓储、数据映射 | [DATA_ACCESS.md](DATA_ACCESS.md) |
-| 运行时配置、环境、功能开关、密钥 | [CONFIGURATION.md](CONFIGURATION.md) |
-| 日志、指标、链路追踪、定时任务、运维故障模式 | [OBSERVABILITY.md](OBSERVABILITY.md) |
-| Schema、migration、seed、backfill | [../database/INDEX.md](../database/INDEX.md) |
+| 持久化、仓储、数据映射 | [{{RULERS_DIR}}/backend/DATA_ACCESS.md]({{RULERS_DIR}}/backend/DATA_ACCESS.md) |
+| 运行时配置、环境、功能开关、密钥 | [{{RULERS_DIR}}/backend/CONFIGURATION.md]({{RULERS_DIR}}/backend/CONFIGURATION.md) |
+| 日志、指标、链路追踪、定时任务、运维故障模式 | [{{RULERS_DIR}}/backend/OBSERVABILITY.md]({{RULERS_DIR}}/backend/OBSERVABILITY.md) |
+| Schema、migration、seed、backfill | [{{RULERS_DIR}}/database/INDEX.md]({{RULERS_DIR}}/database/INDEX.md) |
 
 ---
 
 ## 3. 激活说明
 
-后端工作必须遵循 [../AGENTS.md](../AGENTS.md) 与 [../core/HARD_CONSTRAINTS.md](../core/HARD_CONSTRAINTS.md) 中的激活等级和证据要求。认证、授权、持久化行为、运维行为以及其他高风险后端变更，在实施前需要 Level 2 或更高等级，并具备已审阅的项目特定事实。
+后端工作必须遵循 [{{RULERS_DIR}}/AGENTS.md]({{RULERS_DIR}}/AGENTS.md) 与 [{{RULERS_DIR}}/core/HARD_CONSTRAINTS.md]({{RULERS_DIR}}/core/HARD_CONSTRAINTS.md) 中的激活等级和证据要求。认证、授权、持久化行为、运维行为以及其他高风险后端变更，在实施前需要 Level 2 或更高等级，并具备已审阅的项目特定事实。
 
 ---
 

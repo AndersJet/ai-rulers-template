@@ -22,17 +22,17 @@ metadata:
     - 间距
     - 字体排版
   must_load_with:
-    - ../../../AGENTS.md
-    - ../../../core/HARD_CONSTRAINTS.md
-    - INDEX.md
-    - ../../common/DESIGN_TOKENS.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/frontend/app/design/INDEX.md
+    - {{RULERS_DIR}}/frontend/common/DESIGN_TOKENS.md
 ```
 
 ---
 
 ## 1. Token 所有权
 
-- 移动端 token 使用必须遵循 [../../common/DESIGN_TOKENS.md](../../common/DESIGN_TOKENS.md) 和目标项目的平台 token 权威来源。
+- 移动端 token 使用必须遵循 [{{RULERS_DIR}}/frontend/common/DESIGN_TOKENS.md]({{RULERS_DIR}}/frontend/common/DESIGN_TOKENS.md) 和目标项目的平台 token 权威来源。
 - 平台 token 覆盖必须有已记录的所有者和原因。
 - 不得在此通用模板中定义具体 token 值。
 

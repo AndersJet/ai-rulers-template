@@ -21,10 +21,10 @@ metadata:
     - 响应式
     - 主题
   must_load_with:
-    - ../../../AGENTS.md
-    - ../../../core/HARD_CONSTRAINTS.md
-    - ../INDEX.md
-    - ../../common/DESIGN_TOKENS.md
+    - {{RULERS_DIR}}/AGENTS.md
+    - {{RULERS_DIR}}/core/HARD_CONSTRAINTS.md
+    - {{RULERS_DIR}}/frontend/web/INDEX.md
+    - {{RULERS_DIR}}/frontend/common/DESIGN_TOKENS.md
 ```
 
 ---
@@ -33,15 +33,15 @@ metadata:
 
 Web 页面、组件、布局、响应式行为、主题和无障碍工作需加载这些规则：
 
-- [VISUAL_SYSTEM.md](VISUAL_SYSTEM.md)
-- [COMPONENT_PATTERNS.md](COMPONENT_PATTERNS.md)
-- [ACCESSIBILITY.md](ACCESSIBILITY.md)
+- [{{RULERS_DIR}}/frontend/web/design/VISUAL_SYSTEM.md]({{RULERS_DIR}}/frontend/web/design/VISUAL_SYSTEM.md)
+- [{{RULERS_DIR}}/frontend/web/design/COMPONENT_PATTERNS.md]({{RULERS_DIR}}/frontend/web/design/COMPONENT_PATTERNS.md)
+- [{{RULERS_DIR}}/frontend/web/design/ACCESSIBILITY.md]({{RULERS_DIR}}/frontend/web/design/ACCESSIBILITY.md)
 
 ---
 
 ## 2. 范围
 
-设计规则治理视觉层级、可复用组件模式和无障碍。仅实施相关的关注点通过 [../develop/INDEX.md](../develop/INDEX.md) 路由。
+设计规则治理视觉层级、可复用组件模式和无障碍。仅实施相关的关注点通过 [{{RULERS_DIR}}/frontend/web/develop/INDEX.md]({{RULERS_DIR}}/frontend/web/develop/INDEX.md) 路由。
 
 ---
 
