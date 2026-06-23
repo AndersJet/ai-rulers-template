@@ -17,7 +17,20 @@
 
 ### Security
 
-## [1.0.6] - 2026-06-18
+## [1.0.7] - 2026-06-23
+
+### Added
+
+- `ai-rulers-init/SKILL.md` 新增 Step 6 初始化后清理流程，明确一次性产物移除与维护参考整合规则
+- `AGENTS.md` 新增加载后强制检查：`PROJECT_PROFILE.md` 存在性必须通过文件系统工具确认，禁止从等级表格推断状态
+- `validate_rulers.py` 新增 `validate_post_init_cleanup()` 与 `validate_agents_post_load_check()` 校验
+
+### Changed
+
+- 项目名从 `ai-rulers-template` 统一更新为 `ai-rulers-constructor`
+- README、CONTRIBUTING 双语言版本及介绍幻灯片中的品牌名统一为 `Rulers Constructor`
+- README 中描述性 `template` 字样统一调整为 `rulers`，避免将整套规则体系误称为模板
+- 重新打包 `ai-rulers-init.skill`
 
 ### Changed
 
