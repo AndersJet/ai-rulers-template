@@ -141,7 +141,7 @@ grep -rn "目标项目" documents/<RULERS_DIR_NAME>/ --include="*.md" \
 
 ```bash
 find documents/<RULERS_DIR_NAME> -name "*.md" \
-  -exec sed -i '' 's/§\([0-9]\)/第\1节/g' {} +
+  -exec sed -i '' 's/§\([0-9][0-9]*\)/第\1节/g' {} +
 ```
 
 验证：
