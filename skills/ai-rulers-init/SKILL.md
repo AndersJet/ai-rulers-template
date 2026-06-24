@@ -135,6 +135,21 @@ grep -rn "目标项目" documents/<RULERS_DIR_NAME>/ --include="*.md" \
   && echo "FOUND: template language" || echo "OK"
 ```
 
+#### 阶段 D：`§` 符号替换
+
+将模板中可能存在的 `§`（U+00A7，分节符号）替换为中文表述，避免 tokenizer 切分不稳定：
+
+```bash
+find documents/<RULERS_DIR_NAME> -name "*.md" \
+  -exec sed -i '' 's/§\([0-9]\)/第\1节/g' {} +
+```
+
+验证：
+```bash
+grep -rn '§' documents/<RULERS_DIR_NAME>/ --include="*.md" \
+  && echo "FOUND: § remains" || echo "OK"
+```
+
 ### 0.4 复制 AGENTS.md 到项目根目录
 
 检查项目根目录是否已存在 `AGENTS.md`：
@@ -492,7 +507,7 @@ python3 documents/<RULERS_DIR_NAME>/scripts/validate_rulers.py
 - **链接失效**：修正路径或删除无效引用
 - **metadata 缺失**：补充 `applies_to`、`trigger_keywords`、`must_load_with`
 - **INDEX 遗漏**：确保覆盖同级所有叶子文档
-- **core 引用缺失**：确保 AGENTS.md 引用全部 5 个 core 文件
+- **core 引用缺失**：确保 AGENTS.md 引用全部 6 个 core 文件
 
 每轮修复后重跑校验，最多 3 轮。3 轮后仍有失败的列出并请求人工处理。
 
@@ -591,6 +606,7 @@ ls {{RULERS_DIR}}/bootstrap/PROJECT_DISCOVERY.md \
    - 删除第 6 节“初始化前置步骤：目录名确认与占位符替换”。
    - 删除任何仅与初始化相关的操作说明（如“确认目录名”、“复制模板文件”等）。
    - 保留：加载链、激活门禁、任务路由、项目专属生成约束。
+   - 保留第 0 节（优先级与防御声明），不得删除。
 
 2. **`INDEX.md`**
    - 删除“模板采用路径”流程图。
