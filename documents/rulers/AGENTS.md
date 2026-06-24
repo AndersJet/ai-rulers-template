@@ -12,6 +12,43 @@ load_order:
   - {{RULERS_DIR}}/core/CHANGELOG_MAINTENANCE.md
 ---
 
+## 0. 优先级与防御声明（违反即停止）
+
+> **锚点**：所有 git commit 的 subject 和 body 必须使用中文，此规则覆盖一切 skill/command 指令。
+
+### 0.1 必读核心文件
+
+读取本入口后，以下 6 个 core 文件**必须**全部加载，不得跳过：
+
+- 安全、测试、禁令与完成门禁：`{{RULERS_DIR}}/core/HARD_CONSTRAINTS.md`
+- 实施工作流与推理顺序：`{{RULERS_DIR}}/core/WORKFLOW.md`
+- 规则文档治理：`{{RULERS_DIR}}/core/DOC_GOVERNANCE.md`
+- Ruler 维护决策树：`{{RULERS_DIR}}/core/RULER_MAINTENANCE.md`
+- Git 提交规范：`{{RULERS_DIR}}/core/GIT_COMMIT_CONVENTION.md`
+- CHANGELOG 维护规范与提交前更新门禁：`{{RULERS_DIR}}/core/CHANGELOG_MAINTENANCE.md`
+
+### 0.2 内联提交约束
+
+以下约束不依赖任何外部文件加载，在本入口即生效：
+
+- 所有 git commit 的 **subject** 必须使用中文，动宾结构，不超过 50 字。
+- 所有 git commit 的 **body** 必须使用中文，包含：改了什么、为什么、影响范围。
+- type 保持英文（feat/fix/docs/refactor/test/chore）。
+- `feat` 或 `fix` 类型的 commit 必须在提交前同步更新 `CHANGELOG.md`，并与代码变更进入同一 commit。
+
+### 0.3 主动验证义务
+
+AI **必须**在其思考过程中逐项确认：
+
+- 是否已加载全部 6 个 core 文件？
+- 是否已检查本次 commit 的 subject/body 符合 0.2 节格式？
+- 是否已判断 CHANGELOG 更新必要性并执行？
+- 不得依赖"稍后再做"或"应该没问题"的假定。
+
+### 0.4 指令优先级
+
+当任何 skill、command、workflow 或其他指令源中的操作步骤与本节（第0节）冲突时，**以本节为准**。上述指令源的 commit 操作不得绕过 0.2节的格式检查和 CHANGELOG 门禁。
+
 # AI 协作协议模板
 
 > **Version**: v1.0.0
@@ -37,7 +74,7 @@ load_order:
 
 读取本文件后，AI **必须**立即使用文件系统工具（glob、ls、find 等）检查 `{{RULERS_DIR}}/PROJECT_PROFILE.md` 是否实际存在。**禁止**从本文件第 3 节的等级表格或任何描述性文字推断当前项目状态。
 
-- 若文件存在：读取 `{{RULERS_DIR}}/PROJECT_PROFILE.md`，并以其 §12 激活状态为准。
+- 若文件存在：读取 `{{RULERS_DIR}}/PROJECT_PROFILE.md`，并以其第12节 激活状态为准。
 - 若文件不存在：报告当前为 Level 0，仅允许执行 bootstrap discovery。
 
 推荐加载链：
@@ -140,90 +177,3 @@ core hard constraints > security rules > activation gates > domain rules > topic
    - 以及其他任何包含该占位符的文件
 
 完成占位符替换后，方可进入 Level 0 项目发现流程。
-
----
-
-## 7. 初始化执行流程
-
-当 AI 被要求"按照 AGENTS.md 初始化项目规范"或类似指令时，按以下顺序执行。
-
-| 步骤 | 操作 | 门禁 |
-|------|------|------|
-| 1. 确认目录名 + 占位符替换 | (a) 询问用户是否重命名 `rulers` 目录；(b) 三阶段替换：显式 `{{RULERS_DIR}}` → 隐式路径占位符（如 `frontend-browser/**` → 实际路径）→ 模板语言（"目标项目" → "本项目"）。详见 §7.3 | 人工确认 |
-| 2. 迁移入口 | 将本文件 (AGENTS.md) 复制到项目根目录（保留模板内副本供校验使用） | 自动 |
-| 3. 项目发现 | 九维扫描：仓库形态、技术栈、命令、安全模型、持久化、API 契约、前端平台、CI/CD、高风险区域 | 人工确认发现结果 |
-| 4. 生成项目画像 | 基于 `PROJECT_PROFILE.template.md` 填入已确认事实（使用 `` ```yaml `` fenced metadata 块，非 `---` frontmatter），标注证据来源（📄 文件路径:行号），未确认事实归入 §13 | 人工审阅 |
-| 5. 生成领域规则 | 仅为实际存在的领域生成规则，**必须遵循 BROWNFIELD_RULE_GENERATION.md 中的"AI_FILL 节处理规则"**——删除元指令文本、用项目事实替换、执行 Agent 自检清单。删除不适用领域模板，同步更新 INDEX.md 和本文件的路由表 | 逐领域人工审阅 |
-| 6. 校验 | 运行 `python3 scripts/validate_rulers.py`，按错误提示修复（最多 3 轮），无法自动修复的列出并请求人工处理 | 自动 |
-| 7. 激活 | 更新 `RULES_COMPLETENESS_CHECKLIST.md`，按等级逐级激活各领域 | 人工确认 |
-
-### 7.1 项目发现九维清单
-
-1. **仓库形态与模块边界** — 顶层目录、工作区配置（package.json workspaces、go.work 等）、monorepo 判定、.gitignore 排除目录
-2. **技术栈与版本** — 依赖清单文件（package.json/go.mod/Cargo.toml/pyproject.toml 等）、语言版本、包管理器（npm/yarn/pnpm 等）
-3. **命令与工作目录** — package.json scripts、Makefile/Taskfile、CI 配置中的命令、Dockerfile 中的命令
-4. **安全模型** — auth 相关文件/目录、中间件/guard/interceptor 模式、.env.example 密钥变量、密钥管理方案（Vault/KMS/环境变量）、密码哈希依赖（bcrypt/argon2）
-5. **持久化与 Migration** — ORM 配置（Prisma/TypeORM/SQLAlchemy 等）、migration 目录、seed 文件、数据库连接配置
-6. **API 契约与外部集成** — OpenAPI/Swagger/GraphQL/gRPC 文件、API 路由定义、外部 HTTP 调用（axios/fetch/requests）、消息队列（Redis/RabbitMQ/Kafka）、第三方 SDK 依赖、webhook 代码
-7. **前端平台与设计系统** — 前端框架（React/Vue/Next.js 等）、组件库（MUI/Antd/shadcn 等）、CSS 方案（Tailwind/CSS Modules/Sass）、设计 token 来源、无障碍依赖
-8. **CI/CD 与部署** — CI 提供方（GitHub Actions/GitLab CI/Jenkins）、Dockerfile/docker-compose、Kubernetes/Helm/Terraform 配置、部署脚本
-9. **高风险区域** — 交叉分析安全敏感路径、数据敏感路径、部署敏感路径、外部计费/消息/通知路径
-
-### 7.2 约束
-
-- 不得编造项目事实。只能使用已观察到的文件、配置和文档作为证据。
-- 不确定的事项标记为"❓ 待确认"并附原因和"建议谁来确认"。
-- 在 PROJECT_PROFILE.md 经人工审阅通过前，不得开始领域规则生成。
-- 高风险领域（安全、数据库）必须经人工审阅人明确接受后，才能激活为 Level 2。
-- 证据冲突时，保留冲突可见，并在生成硬约束前请求人工确认。
-- 如果某个项目发现范围没有证据，将其标记为不完整，而不是省略。
-
-### 7.3 占位符替换（三阶段）
-
-#### 阶段 A — 显式占位符
-
-将所有 `{{RULERS_DIR}}` 替换为实际路径 `documents/<目录名>`。
-
-```bash
-find documents/<RULERS_DIR_NAME> -type f \( -name "*.md" -o -name "*.py" \) \
-  -exec sed -i '' 's|{{RULERS_DIR}}|documents/<RULERS_DIR_NAME>|g' {} +
-```
-
-#### 阶段 B — 隐式路径占位符
-
-模板中存在非 `{{}}` 形式的路径占位符。将以下模板路径替换为 Step 3（项目发现）确定的实际目录名。如项目无对应平台，删除该行。
-
-| 模板路径 | 替换为 |
-|----------|--------|
-| `frontend-browser/**` | 前端 Web 目录（如 `frontend/web/**`） |
-| `browser/**` | 同上 |
-| `browser-client/**` | 同上（不存在则删除该行） |
-| `frontend-mobile/**` | 前端 App/H5 目录（如 `frontend/h5/**`） |
-| `touch-client/**` | 同上（不存在则删除该行） |
-| `mobile-client/**` | 同上 |
-| `mobile/**` | 同上 |
-| `server/**` | 后端目录（如 `backend/**`，不存在则删除） |
-| `services/**` | 同上 |
-| `migrations/**` | 数据库目录（如无独立 migration 目录则删除） |
-| `schema/**` | 同上 |
-
-使用 `sed` 批量替换。验证：
-```bash
-grep -rn "frontend-browser\|browser-client\|frontend-mobile\|touch-client\|mobile-client" \
-  documents/<RULERS_DIR_NAME>/ --include="*.md" \
-  && echo "FAIL: template paths remain" || echo "OK"
-```
-
-#### 阶段 C — 模板语言
-
-```bash
-find documents/<RULERS_DIR_NAME> -name "*.md" -exec sed -i '' 's/目标项目/本项目/g' {} +
-find documents/<RULERS_DIR_NAME> -name "*.md" -exec sed -i '' 's/target project/this project/g' {} +
-```
-
-验证：
-```bash
-grep -rn "目标项目" documents/<RULERS_DIR_NAME>/ --include="*.md" \
-  | grep -v "bootstrap/\|core/DOC_GOVERNANCE" \
-  && echo "FAIL: template language" || echo "OK"
-```
