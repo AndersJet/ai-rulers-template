@@ -30,3 +30,4 @@ build/
 *.pyc
 __pycache__/
 /docs/
+/.superpowers/
